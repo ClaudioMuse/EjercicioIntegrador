@@ -7,6 +7,8 @@
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <title>Ejercicio integrador</title>
+        <link href="styles/style.css" rel="stylesheet">
+
     </head>
     <body>
         <!--Javascript con Popper-->
@@ -20,19 +22,19 @@
                     <div>
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">La conferencia</a>
+                        <a class="nav-link" href="#Conf">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#Oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#Fecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviertete en orador </a>
+                        <a class="nav-link" href="#Orad">Conviertete en orador </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comprar tickets</a>
+                        <a class="nav-link" href="#tickets">Comprar tickets</a>
                     </li>
                     </ul>
                     </div> 
@@ -51,11 +53,11 @@
                   <br>
                   <br>
                   <br>
-                  <h1 class="card-title" style="color:white" align="right">Conf Bs As</h1>
+                  <h1 class="card-title" style="color:white" align="right" id="Conf">Conf Bs As</h1>
                   <br>
                   <p class="card-text" style="color:white"  align="right">Bs. As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                  <button type="button" class="btn btn-light">Quiero ser orador</button>
-                  <button type="button" class="btn btn-success">Comprar tickets</button>                      
+                  <button type="button" class="btn btn-light" onclick="window.location.href = '#Orad';">Quiero ser orador</button>
+                  <button type="button" class="btn btn-success" onclick="window.location.href = '#tickets';">Comprar tickets</button>                      
                   </div>
               </div>
             </div>
@@ -71,8 +73,8 @@
                       <h1 class="card-title" style="color:white" align="right">Conf Bs As</h1>
                       <br>
                       <p class="card-text" style="color:white"  align="right">Bs. As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                      <button type="button" class="btn btn-light">Quiero ser orador</button>
-                      <button type="button" class="btn btn-success">Comprar tickets</button>
+                      <button type="button" class="btn btn-light" onclick="window.location.href = '#Orad';">Quiero ser orador</button>
+                      <button type="button" class="btn btn-success" onclick="window.location.href = '#tickets';">Comprar tickets</button>
                   </div>
               </div>
             </div>    
@@ -88,8 +90,8 @@
                       <h1 class="card-title" style="color:white" align="right">Conf Bs As</h1>
                       <br>
                       <p class="card-text" style="color:white"  align="right">Bs. As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                      <button type="button" class="btn btn-light">Quiero ser orador</button>
-                      <button type="button" class="btn btn-success">Comprar tickets</button>
+                      <button type="button" class="btn btn-light" onclick="window.location.href = '#Orad';">Quiero ser orador</button>
+                      <button type="button" class="btn btn-success" onclick="window.location.href = '#tickets';">Comprar tickets</button>
                   </div>    
             </div>
           </div>
@@ -102,8 +104,8 @@
           <!--Titulo-->
           <div class="container-fluid">
             <div class="row">
-              <p align="center">CONOCE A LOS</p>
-              <h2 class="text-center">ORADORES</h2>
+              <p align="center" id="Oradores" >CONOCE A LOS</p>
+              <h2 class="text-center" >ORADORES</h2>
             </div>
           </div>
           <br>
@@ -153,7 +155,7 @@
         
         <!--Octubre Bs As-->
         <!--Imagen a la izquierda-->
-        <div class="container-fluid">
+        <div class="container-fluid" id="Fecha">
           <div class="row no-gutters">
             <div class="col-lg-6">
               <img src="Images/honolulu.jpg" class="d-block w-100" alt="...">
@@ -182,7 +184,7 @@
 
           <!--Formulario para orador-->
           <!--Titulo-->
-          <div class="container-fluid">
+          <div class="container-fluid" id="Orad">
             <div class="row">
               <p class="text-secondary" align="center">CONVIERTETE EN UN</p>
               <h2 class="text-center">ORADOR</h2>
@@ -228,6 +230,132 @@
               </div>
           </div>
 
+          <br>
+          <br>
+
+          <!--Comprar tickets-->
+
+          <div class="d-flex justify-content-md-center mx-auto my-2" style="width: 60%" id="tickets">
+            <div class="card text-center border-primary mx-2 py-3" style="width: 33%">
+              <!--Estudiante-->
+              <div class="card-body" >
+                <h4 class="card-title"> Estudiante</h4>
+                <p class="card-text">Tienen un descuento</p>
+                <h5 class="card-title my-4" style="font-weight:700">80 %</h5>
+                <p class="card-title"><small class="text-muted">* presentar documentación</small></p>
+              </div>
+            </div>
+              <!--Trainee-->
+            <div class="card text-center border-sucess mx-2 py-3" style="width: 33%">
+              <div class="card-body" >
+                <h4 class="card-title"> Trainee</h4>
+                <p class="card-text">Tienen un descuento</p>
+                <h5 class="card-title my-4" style="font-weight:700">50 %</h5>
+                <p class="card-title"><small class="text-muted">* presentar documentación</small></p>
+              </div>
+            </div>  
+              <!--Junior-->
+            <div class="card text-center border-warning mx-2 py-3" style="width: 33%">  
+              <div class="card-body" >
+                <h4 class="card-title"> Junior</h4>
+                <p class="card-text">Tienen un descuento</p>
+                <h5 class="card-title my-4" style="font-weight:700">15 %</h5>
+                <p class="card-title"><small class="text-muted">* presentar documentación</small></p>
+              </div>
+            </div>
+          </div>    
+              
+            <div class="container">
+                <div class="row">
+                  <p align="center">VENTA</p>
+                  <h2 align="center">VALOR DE TICKET $200</h2>
+                </div>
+            </div>
+              <br>
+
+              <!--Formulario para la venta de tickets-->
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-3"></div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <br>
+                
+                <!--Correo-->
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+                  </div>
+                  <div class="col-3"></div>
+                </div>
+                <br>
+                <!--Cantidad y Categoria-->
+                <div class="row">
+                  <div class="col-3"></div>
+                    <div class="col-sm-3">
+                      <p>Cantidad</p>
+                      <input type="text" id="cantidad" class="form-control" placeholder="Cantidad" required>
+                    </div>
+                    <div class="col-sm-3">
+                      <p>Categoria</p>
+                      <select id="categoria" class="form-select">
+                          <option value="0">Estudiante</option>
+                          <option value="1">Trainee</option>
+                          <option value="2">Junior</option>
+                      </select> 
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <br>
+                <br>
+                <!--Total a pagar-->
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-sm-6" id="total" >
+                    <div class=" p-2 " >
+                      Total a Pagar: $
+                  </div>
+                  <div class="col-3"></div>
+                  
+                </div>
+                
+                <!--Borrar y Resumen-->
+                            
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-3"  >
+                  <div class="d-grid gap-2" >
+                  <button type="button" class="btn btn-success" type="submit" >Borrar</button>
+                </div>
+                  </div>
+                  <div class="col-3" >
+                    <div class="d-grid gap-2" >
+                    <button type="button" class="btn btn-success" type="submit" onclick="determinarTotal()">Resumen</button>
+                  </div>
+                    </div>
+                  <div class="col-3"></div>
+                </div>
+
+
+
+                    
+
+              </div>
+
+              
+            
+
+          
+
+
+
           <!--Barra de navegacion inferior-->
           <br>
           <nav class="navbar bottom navbar-expand navbar-dark bg-dark">
@@ -271,7 +399,7 @@
 
         
         
-
+    <script src="js/desafioJS.js"></script>
 
     </body>
 </html>
